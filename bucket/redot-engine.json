@@ -2,17 +2,20 @@
     "version":  "4.4-beta",
     "license":  "MIT",
     "description": "A Community-driven game engine with 2D and 3D support.",
-    "url":  "https://github.com/Redot-Engine/redot-engine/releases/download/2024101114/redot-windowsx64.zip",
-    "extract_dir": "redow-windows-dev",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/Redot-Engine/redot-engine/releases/download/2024101114/redot-windowsx64.zip",
+            "hash":  "6b4919b5cb7880efec10c5f57be59ebcc33f43ae687238d7017fe23db3e93bed",
+            "extract_dir": "redot-windows-dev"
+        }
+    },
     "homepage":  "https://redotengine.org",
-    "hash":  "6b4919b5cb7880efec10c5f57be59ebcc33f43ae687238d7017fe23db3e93bed",
     "pre_install": [
-        "Remove-Item \"$dir\\Redot_*_console.*\"",
+        "Remove-Item \"$dir\\redot.*.console.*\"",
         "Get-Item \"$dir\\redot.*.exe\" | Rename-Item -NewName 'redot.exe'"
     ],
-    "bin":  "redot.exe",
+    "bin": "redot.exe",
     "shortcuts": [
-        "redot.exe",
-        "Redot Engine"
+        ["redot.exe", "Redot Engine"]
     ]
 }
