@@ -18,10 +18,12 @@
         }
     },
     "pre_install": [
-        "Remove-Item \"$dir\\Redot_v*.*_console.*\"",
-        "Get-Item \"$dir\\Redot_v*.*.exe\" | Rename-Item -NewName 'redot.exe'"
+        "Get-Item \"$dir\\Redot_v*_console.exe\" | Rename-Item -NewName 'redot.console.exe'",
+        "Get-Item \"$dir\\Redot_v*.exe\" | Rename-Item -NewName 'redot.exe'"
     ],
-    "bin": "redot.exe",
+    "bin": [
+        ["redot.console.exe",  "redot"]
+    ],
     "shortcuts": [
         ["redot.exe", "Redot Engine"]
     ]
