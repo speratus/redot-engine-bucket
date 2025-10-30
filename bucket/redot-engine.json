@@ -22,10 +22,16 @@
         "Get-Item \"$dir\\Redot_v*.exe\" | Rename-Item -NewName 'redot.exe'"
     ],
     "bin": [
-        ["redot.console.exe",  "redot"]
+        [
+            "redot.console.exe",
+            "redot"
+        ]
     ],
     "shortcuts": [
-        ["redot.exe", "Redot Engine"]
+        [
+            "redot.exe",
+            "Redot Engine"
+        ]
     ],
     "checkver": {
         "url": "https://github.com/Redot-Engine/redot-engine/releases/latest",
