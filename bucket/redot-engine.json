@@ -46,7 +46,7 @@
                 "url": "https://github.com/Redot-Engine/redot-engine/releases/download/redot-$version-stable/Redot_v$version-stable_win32.exe.zip"
             },
             "arm64": {
-                "url": "https://github.com/Redot-Engine/redot-engine/releases/download/redot-$version-stable/Redot_v$version-stable_windows_arm64.exe.zip"
+                "url": "https://github.com/Redot-Engine/redot-engine/releases/download/redot-$version-stable/Redot_v$version-stable_windows_arm64.zip"
             }
         }
     }
