@@ -13,8 +13,18 @@
         "Get-Item \"$dir\\redot.windows.editor.*.console.exe\" | Rename-Item -NewName 'redot.console.exe'",
         "Get-Item \"$dir\\redot.windows.editor.*.exe\" | Rename-Item -NewName 'redot.exe'"
     ],
-    "bin": [["redot.console.exe", "redot"]],
-    "shortcuts": [["redot.exe", "Redot Engine"]],
+    "bin": [
+        [
+            "redot.console.exe",
+            "redot"
+        ]
+    ],
+    "shortcuts": [
+        [
+            "redot.exe",
+            "Redot Engine"
+        ]
+    ],
     "checkver": {
         "url": "https://github.com/Redot-Engine/redot-engine/releases/latest",
         "regex": "redot-(?<version>[\\d\\w.]+)-stable"
