@@ -8,51 +8,22 @@
             "url": "https://github.com/Redot-Engine/redot-engine/releases/download/redot-4.3-stable/Redot_v4.3-stable_mono_win64.zip",
             "hash": "824a1c12a5d190ce763a116a472c6a8f0c2acccee3fb11e0a8f58f348e27dbb9",
             "extract_dir": "Redot_v4.3-stable_mono_win64"
-        },
-        "32bit": {
-            "url": "https://github.com/Redot-Engine/redot-engine/releases/download/redot-4.3-stable/Redot_v4.3-stable_mono_win32.zip",
-            "hash": "9a796786a447cab7b733b522c862e34c55ad137c08c242376c79676bffd2a1e3",
-            "extract_dir": "Redot_v4.3-stable_mono_win32"
-        },
-        "arm64": {
-            "url": "https://github.com/Redot-Engine/redot-engine/releases/download/redot-4.3-stable/Redot_v4.3-stable_mono_windows_arm64.zip",
-            "hash": "ade393b562be768bcefe2397bcfbf5c40a3f600f172dc0c0f791b9d243c036f2",
-            "extract_dir": "Redot_v4.3-stable_mono_windows_arm64"
         }
     },
     "pre_install": [
-        "Get-Item \"$dir\\Redot_v*_console.exe\" | Rename-Item -NewName 'redot-mono.console.exe'",
-        "Get-Item \"$dir\\Redot_v*.exe\" | Rename-Item -NewName 'redot-mono.exe'"
+        "Get-Item \"$dir\\redot.windows.editor.*.mono.console.exe\" | Rename-Item -NewName 'redot-mono.console.exe'",
+        "Get-Item \"$dir\\redot.windows.editor.*.mono.exe\" | Rename-Item -NewName 'redot-mono.exe'"
     ],
-    "bin": [
-        [
-            "redot-mono.console.exe",
-            "redot-mono"
-        ]
-    ],
-    "shortcuts": [
-        [
-            "redot-mono.exe",
-            "Redot Engine (C# Support)"
-        ]
-    ],
+    "bin": [["redot-mono.console.exe", "redot-mono"]],
+    "shortcuts": [["redot-mono.exe", "Redot Engine (C# Support)"]],
     "checkver": {
         "url": "https://github.com/Redot-Engine/redot-engine/releases/latest",
-        "regex": "redot-(?<version>[\\d\\w.]+)-stable_mono"
+        "regex": "redot-(?<version>[\\d\\w.]+)-stable"
     },
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://github.com/Redot-Engine/redot-engine/releases/download/redot-$version-stable/Redot_v$version-stable_mono_win64.zip",
-                "extract_dir": "Redot_v$version-stable_mono_win64"
-            },
-            "32bit": {
-                "url": "https://github.com/Redot-Engine/redot-engine/releases/download/redot-$version-stable/Redot_v$version-stable_mono_win32.zip",
-                "extract_dir": "Redot_v$version-stable_mono_win32"
-            },
-            "arm64": {
-                "url": "https://github.com/Redot-Engine/redot-engine/releases/download/redot-$version-stable/Redot_v$version-stable_mono_windows_arm64.zip",
-                "extract_dir": "Redot_v$version-stable_mono_windows_arm64"
+                "url": "https://github.com/Redot-Engine/redot-engine/releases/download/redot-$version-stable/Redot_v$version-stable_windows_mono_win64.zip"
             }
         }
     }
