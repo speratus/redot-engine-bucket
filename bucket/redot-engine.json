@@ -1,20 +1,30 @@
 {
-    "version": "4.4",
+    "version": "26.1",
     "description": "A Community-driven game engine with 2D and 3D support.",
     "homepage": "https://redotengine.org",
     "license": "MIT",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/Redot-Engine/redot-engine/releases/download/redot-4.4-stable/Redot_v4.4-stable_win64.exe.zip",
-            "hash": "fa5b55897362d4f3539c0a7ea29112f1083d09ce4367797522288df7ff6ece2f"
+            "url": "https://github.com/Redot-Engine/redot-engine/releases/download/redot-26.1-stable/Redot_v26.1-stable_windows_win64.zip",
+            "hash": "b8e8ec85b3e63f865af89759b42df3b320f7ecca1f639a5df590db5fd87ff0c1"
         }
     },
     "pre_install": [
         "Get-Item \"$dir\\Redot_v*_console.exe\" | Rename-Item -NewName 'redot.console.exe'",
         "Get-Item \"$dir\\Redot_v*.exe\" | Rename-Item -NewName 'redot.exe'"
     ],
-    "bin": [["redot.console.exe", "redot"]],
-    "shortcuts": [["redot.exe", "Redot Engine"]],
+    "bin": [
+        [
+            "redot.console.exe",
+            "redot"
+        ]
+    ],
+    "shortcuts": [
+        [
+            "redot.exe",
+            "Redot Engine"
+        ]
+    ],
     "checkver": {
         "url": "https://github.com/Redot-Engine/redot-engine/releases/latest",
         "regex": "redot-(?<version>[\\d\\w.]+)-stable"
