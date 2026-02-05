@@ -1,13 +1,12 @@
 {
-    "version": "4.3",
+    "version": "26.1",
     "description": "A Community-driven game engine with 2D and 3D support. This version supports scripting in C#.",
     "homepage": "https://redotengine.org",
     "license": "MIT",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/Redot-Engine/redot-engine/releases/download/redot-4.3-stable/Redot_v4.3-stable_mono_win64.zip",
-            "hash": "824a1c12a5d190ce763a116a472c6a8f0c2acccee3fb11e0a8f58f348e27dbb9",
-            "extract_dir": "Redot_v4.3-stable_mono_win64"
+            "url": "https://github.com/Redot-Engine/redot-engine/releases/download/redot-26.1-stable/Redot_v26.1-stable_windows_mono_win64.zip",
+            "hash": "b2ff77be5ea0f21d8326438ac6813ac3760454324b40079b0519698a6b0bdbf8"
         }
     },
     "pre_install": [
