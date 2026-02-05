@@ -13,8 +13,18 @@
         "Get-Item \"$dir\\redot.windows.editor.*.mono.console.exe\" | Rename-Item -NewName 'redot-mono.console.exe'",
         "Get-Item \"$dir\\redot.windows.editor.*.mono.exe\" | Rename-Item -NewName 'redot-mono.exe'"
     ],
-    "bin": [["redot-mono.console.exe", "redot-mono"]],
-    "shortcuts": [["redot-mono.exe", "Redot Engine (C# Support)"]],
+    "bin": [
+        [
+            "redot-mono.console.exe", 
+            "redot-mono"
+        ]
+    ],
+    "shortcuts": [
+        [
+            "redot-mono.exe", 
+            "Redot Engine (C# Support)"
+        ]
+    ],
     "checkver": {
         "url": "https://github.com/Redot-Engine/redot-engine/releases/latest",
         "regex": "redot-(?<version>[\\d\\w.]+)-stable"
