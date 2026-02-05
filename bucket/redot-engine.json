@@ -22,7 +22,7 @@
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://github.com/Redot-Engine/redot-engine/releases/download/redot-$version-stable/Redot_v$version-stable_win64.exe.zip"
+                "url": "https://github.com/Redot-Engine/redot-engine/releases/download/redot-$version-stable/Redot_v$version-stable_windows_win64.zip"
             }
         }
     }
