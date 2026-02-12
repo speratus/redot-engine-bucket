@@ -16,6 +16,21 @@ scoop bucket add redot https://github.com/speratus/redot-engine-bucket
 scoop install redot/redot-engine
 ```
 
+## A Note on Supported Architectures
+
+This bucket currently does not provide arm64 or 32-bit architecture support.
+The Redot maintainers have opted not to provide pre-built binaries for 32-bit
+and arm64 architectures because these architectures accounted for very low
+percentages of the total downloads of Redot.
+
+The Redot mainteners informed me that those architectures for Windows are
+supported, but that users wishing to use them will have to build Redot
+from source for those architectures.
+
+If you would like to use Redot on an arm64 or 32-bit Windows machine, you
+can find the documentation for building from source
+[here](https://docs.redotengine.org/en/stable/contributing/development/compiling/compiling_for_windows).
+
 ## How do I contribute new manifests?
 
 To make a new manifest contribution, please read the [Contributing
